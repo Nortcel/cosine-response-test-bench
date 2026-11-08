@@ -1,3 +1,0 @@
-Historical EUR component-price list, not a present-day quotation.
-Correction: the original Sheet1 F27=SUM(F5:F26) omitted F4 (EUR16.70 detector mount). The revised sum includes F4:F26, giving EUR212.18. The detector purchase list remains EUR106.53; combined listed total EUR318.71.
-The row 23 quantity of 3 at EUR15 has been preserved, not reinterpreted. Confirm whether this means kits or switches. Reused/printed items, unpriced PCBs, labour, shipping and tax are not a verified complete replication budget.
