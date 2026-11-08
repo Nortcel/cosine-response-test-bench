@@ -1,0 +1,8 @@
+Reproduce the prepared analyses
+Install Python and dependencies listed in requirements.in in a separate environment. The analysis environment versions used for this review are recorded separately; they do not establish the acquisition environment or GUI binary build.
+From the analysis directory:
+python cosine_response_analysis_v2_1.py --input-dir ../data/workbook_cohort --output-dir output
+python optical_graph_reproduction.py
+python control_architecture_figure.py
+The first command accepts only the historical 100-reading workbook layout; it adds one explicitly marked constructed endpoint. Never pass new 101-point firmware runs or the separate 201-point CSV campaign through it.
+The optical script reads the 20 transcribed graph labels and produces a fit, residuals and Figure S2. No physical reference unit is inferred. It does not create or substitute raw measurements.

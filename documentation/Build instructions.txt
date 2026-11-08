@@ -1,0 +1,29 @@
+Build instructions
+
+The following procedure documents the intended assembly. Verify dimensions, clearances, module identity and the as-built circuit against the physical bench and supplied CAD before drilling or wiring; photographs alone do not establish manufacturing dimensions.
+
+1. Prepare the base plate. Deburr and clean the recycled aluminium lid or substitute a rigid plate of similar size. Mark a central motor axis and leave sufficient clearance for a 300 mm source radius. Protect any sharp edges.
+
+2. Mount the stepper motor. Fix M07 centrally so that the shaft is perpendicular to the base. Use a rigid bracket or through-fasteners and confirm that the motor cannot rotate under arm torque.
+
+3. Assemble and balance the rotating arm. Attach M03/M04 to the motor hub. Fit M05 on the opposite side of the source so that the assembly is approximately balanced. Replace or fully encapsulate the historical lead weight where required by local safety rules.
+
+4. Install the laser source. Mount E01 at the distal end and align it toward the detector centre. Fit M10 to reduce stray light. Route the laser cable along the arm using flexible cable with sufficient strain relief.
+
+5. Install the fixed detector fixture. Mount M02 so that the detector active area lies on the rotational centre and at the same height as the laser. Use M09 to hold the small detector PCB consistently and allow detector exchange without changing the centre position.
+
+6. Install home and end sensors. Place the two S03 optical interrupters so that flags on the arm activate them at approximately -90Â° and +90Â°. Adjust them mechanically before applying motor power.
+
+7. Mount electronics and physical controls. Fix E03, E02, S01, S02, and S04 with insulated standoffs. Keep analogue detector wiring separate from motor and laser wiring where practical.
+
+8. Wire the controller. Connect the components according to pinout.csv: Start D2, Stop D3, Free D4, home D5, end D6, laser D7, direction D8, step D9, DHT11 D10, motor enable D12, and detector signal A1. Use a common ground and verify the EasyDriver supply polarity.
+
+9. Verify the detector polarity and range. With the arm stationary and the laser blocked/unblocked, confirm that A1 remains inside 0-5 V and that the signal decreases with increasing light, as assumed by the analysis. Record any alternative polarity and change the analysis accordingly.
+
+10. Upload firmware. Compile and upload firmware V5.2.2. Open a serial terminal at 9600 baud, issue the VERSION command, and confirm firmware, board, build information, and motion settings.
+
+11. Verify motion with the laser disabled before replicating measurements. Check both limits, home position and the documented version-specific stop behaviour. Successful normal operation does not make the historical firmware a hardware emergency-stop system.
+
+12. Add the optical enclosure and beam stop. Operate the 5 mW laser only in a controlled area. Enclose the scan plane or use a suitable beam stop, prevent eye-level exposure, restrict access, and follow institutional laser-safety procedures.
+
+Install the optional desktop controller from the supplied source. The dependency-name list is supplied; record package versions when building a new installation. A bit-identical rebuild of the supplied executable is not claimed. Connect at 9600 baud and verify identity, controls and export against the chosen firmware before acquisition.

@@ -1,0 +1,12 @@
+Command,Function
+START,Start a 101-point angular scan when homed
+STOP,"Request stop and switch off laser; scan/alignment stops initiate homing, which ignores STOP. Not an emergency stop."
+FREE,"Disable motor torque, switch on laser, and stream alignment voltage"
+HOME,Initiate homing; active-motion calls are not rejected in V5.2.2.
+GO END,Move to the end optical interrupter
+LASER ON / LASER OFF,ON requires standby. OFF switches laser off and forces standby even during active work; avoid during motion.
+STATUS,"Report current mode, home state, and motion settings"
+VERSION / INFO,"Report firmware, board, build, and settings"
+GET SETTINGS,Report scan and return pulse delays
+SET SCAN_US n,"Set scan half-pulse delay, 150-20000 microseconds"
+SET RETURN_US n,"Set return half-pulse delay, 100-20000 microseconds"

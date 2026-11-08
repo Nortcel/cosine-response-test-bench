@@ -1,0 +1,17 @@
+Desktop controller V26.7
+
+Windows executable: not included in this public candidate; dependency notices remain under review.
+Editable source: source/Controller_V26_7_RELEASE.py, preserved unchanged from the supplied V26.7 source.
+Source dependencies are listed in source/requirements.in. These are dependency names inferred from imports, not a recovered tested version lock. Record Python and exact package versions from a successful clean build before claiming a reproducible binary.
+
+The author confirms that the supplied software worked with the apparatus. Exact build dependencies and a bit-identical rebuild have not been independently verified.
+
+Suggested source-environment workflow for replication:
+python -m venv .venv
+.venv\Scripts\python -m pip install -r source/requirements.in
+.venv\Scripts\python source/Controller_V26_7_RELEASE.py
+Record the tested environment with pip freeze. A PyInstaller build recipe and assets must be validated against the supplied executable; this package does not assert a bit-identical rebuild.
+
+IMPORTANT METRIC DISTINCTION
+The GUI estimates dark voltage from angles with abs(theta)>=85, uses the central abs(theta)<=2 region as reference and clips normalised response to 0..1.2. The offline manuscript analysis instead uses abs(5-V) and peak normalisation. GUI RMSE values must not be substituted into the manuscript table.
+Device controls: 9600 baud. Use the supplied historical firmware instructions and limitations.

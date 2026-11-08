@@ -1,0 +1,7 @@
+Operating notes — firmware V5.2.2
+
+The laser source rotates around a stationary detector. Maintain alignment, keep the analogue input within 0-5 V, enclose the scan plane/use a beam stop and keep clear of the moving arm. The separate optical experiment's conditioned readout is not the Arduino input circuit.
+
+The developer reports successful operation of the apparatus, controller and acquisition. Individual fault-test records and a reproducible binary build are not supplied.
+
+Known historical firmware limitations identified by code inspection: STOP is not honoured during homing; physical Start has no homed-position guard; HOME and LASER OFF can disrupt active state handling. These controls are not a hardware emergency stop. Isolate power if motion cannot be stopped through the controls. Validate limits, alignment and command behaviour before a new acquisition.
