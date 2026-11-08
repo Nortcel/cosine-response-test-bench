@@ -1,0 +1,22 @@
+Dissertation evidence assessment 21 October 2026
+Source: NE 6009 - Dissertation in Sustainable Energy - Attila Preszter FINAL.docx, supplied by the author. Original preserved unchanged in the private author-review historical documents folder; not included wholesale in the design release.
+Locators below are zero-based DOCX paragraph indices in the extracted text, not rendered page numbers. Section and figure names are the stable reading references.
+
+Documented setup and procedure
+- Chapter 3, Circuit Design for Taking Measurements, P294–296: the initial load-resistor approach was replaced with a reverse-biased photodiode and transimpedance amplifier. This supports interpreting the measured voltage as a conditioned readout signal rather than the bare photodiode terminal voltage. Exact multimeter nodes and a complete optical-test circuit are not specified.
+- P295 states gain factor 10, but gives no gain units, feedback resistor or full circuit. It must not be used as an arbitrary divisor for the power readings.
+- Chapter 3, Measurements Taken, P304–307: Fiber-Lite DC950H; Newport 1830 C; silicon detector calibration module DB15; digital multimeter. DB15 alone is insufficient to identify the calibrated sensor head and responsivity.
+- P312: set the diode voltage, hold illumination unchanged, replace the diode with the reference module, and read the optical meter. Twenty nominal voltage points from 1 to 20 V are described. This is sequential substitution, despite the text also using the word parallel.
+- P284–285: preserve measurement position and source distance when substituting detectors.
+
+Detector and dataset provenance
+- Chapter 2 P264/P267 identifies 958-1024-1-ND as its selected detector. Chapter 3 P280 then describes testing the selected detector. Chapter 4 P399 again identifies 958-1024-1-ND. These support 958; the 985 form in Figure 3-3 title/caption is a probable transposition error, not a separately documented detector.
+- P244/P255 describe a historical 201-sample-per-direction campaign, including forward and reverse acquisition. This supports keeping that campaign distinct from the approved 100-reading workbook cohort and the newer V5.2.2 101-sample firmware. The dissertation winner does not replace the approved workbook ranking.
+
+What remains unresolved
+- Figure 3-3 retains the same 20 labelled values and W/m² axis; P317 calls the y value reference power. P321 claims a 0–1600 W/m² range without a traceable conversion or supporting paired log. The instrument photographs show mW. The dissertation does not establish how the plotted 1.928–9.55 labels relate to those mW readings.
+- Chapter 4 P399 states an active photodiode area of 8 mm² and a nominal 9.6 mW figure. Its written dimensional expression is inconsistent. For dimensional checking only: 9.6 mW divided by 8 mm² equals 1200 W/m², assuming total power uniformly incident on that area. This is not a validated conversion for Chapter 3: the reference head area, beam profile and scaling remain unknown.
+- Photodiode active area cannot automatically be substituted for reference detector collection area. No new irradiance column or scale factor has been added.
+- Original paired instrument records, meter wavelength/range settings, reference-head identity/calibration, circuit values and measurement uncertainty remain unestablished. The graph-label table is secondary documentary evidence, not a raw log or proof of saturation limits.
+
+Source SHA256: 9ddb453e3c95c08708146161c6c643261a170b016b9ca481adb8a596b9519955

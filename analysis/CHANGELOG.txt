@@ -1,0 +1,12 @@
+v2.1 package revision,21 October2026
+Main table calculation is unchanged from v2. Figure filenames now match manuscript Figures5-7.
+Supplementary S1 centres the sample SD on the mean of the same independently normalised runs.
+Processed CSVs identify the constructed endpoint and distinguish both normalisation orders.
+CSV replaces the old generated numeric workbook as the portable derived-data export; raw workbook inputs remain unchanged.
+Historical reconstruction only: requires 100 raw readings per scan. Do not pass current 101-point acquisitions to this script.
+Run: python cosine_response_analysis_v2_1.py --input-dir ../data/workbook_cohort --output-dir output
+Exact dependency versions must be recorded from a successful run.
+
+Second review 21 October 2026: added detector/source columns to processed curves, generated measured-only sensitivity directly, recovered optical-label table with independent Excel/Python fit, and supplied Figure 3/8 reproduction scripts. Primary angular metrics unchanged.
+
+Author-approved scope update: optical Figure 8 moved to supplementary Figure S2; numeric inputs and calculations unchanged. Licences adopted for author-controlled material. Functional testing recorded as author-confirmed; agent-created firmware candidate excluded.
