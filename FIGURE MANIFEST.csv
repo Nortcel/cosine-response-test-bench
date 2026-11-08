@@ -1,0 +1,11 @@
+﻿Figure,Source,Method,Status
+Figure 1,Original project photograph/diagram,See source documentation,Existing visual documentation
+Figure 2,Original project photograph/diagram,See source documentation,Existing visual documentation
+Figure 3,V5.2.2 source static review,analysis/control_architecture_figure.py,Corrected limited timeout and STOP behavior; schematic is functional only
+Figure 4,Original project photograph/diagram,See source documentation,Existing visual documentation
+Figure 5,data/workbook_cohort,analysis/cosine_response_analysis_v2_1.py,Regenerated; main metrics unchanged
+Figure 6,data/workbook_cohort,analysis/cosine_response_analysis_v2_1.py,Regenerated; main metrics unchanged
+Figure 7,data/workbook_cohort,analysis/cosine_response_analysis_v2_1.py,Regenerated; main metrics unchanged
+Figure S2,data/optical_graph_transcription; source 021 Figure 3-3,analysis/optical_graph_reproduction.py,Supplementary saturation check; author reports no saturation; graph reference scale remains unresolved
+Figure S1,data/workbook_cohort,Mean of independently normalised scans +/- sample SD,Regenerated
+Graphical abstract,Unmodified project photo + regenerated Figure5,Vector PDF composition; historical/new sample counts distinguished,Revised

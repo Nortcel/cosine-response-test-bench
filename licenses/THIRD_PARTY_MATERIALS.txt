@@ -1,0 +1,5 @@
+Third-party material and dependency record
+The desktop Python source imports PySide6, pyserial and matplotlib; the analysis uses numpy, pandas, openpyxl and matplotlib. These dependencies are not relicensed by the project's MIT notice. Original terms and applicable notices must accompany any redistribution that requires them.
+Package information: https://pypi.org/project/PySide6/ ; https://pypi.org/project/pyserial/ ; https://pypi.org/project/matplotlib/ ; https://pypi.org/project/numpy/ ; https://pypi.org/project/pandas/ ; https://pypi.org/project/openpyxl/
+The supplied Windows executable is preserved unchanged. Its exact bundled versions and complete dependency notices have not been independently inventoried. Author confirmation of operation does not establish a binary dependency/licence inventory. Preserve the original distributor's notices and review them before public redistribution.
+The original software source and dependency names are included for inspection. No third-party ownership or permission is asserted on behalf of its licensors.
